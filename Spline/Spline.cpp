@@ -3,7 +3,7 @@
 #include "CSpline.h"
 
 
-double read(double val, vector<double> xi, vector<double> yi, int nTotal)
+int read(double val, vector<double> xi, vector<double> yi, int nTotal)
 {
 	double mindiff = 1;
 	int pos;
@@ -14,7 +14,7 @@ double read(double val, vector<double> xi, vector<double> yi, int nTotal)
 			pos = i;
 		}
 	}
-	return yi[pos];
+	return pos;
 }
 
 
@@ -38,9 +38,15 @@ int main() {
 		cout << xi[i] << "\t" << yi[i] << endl;
 	}
 
-	double interpolated1 = read(1.75, xi, yi, nTotal);
-	cout << interpolated1 << endl;
+	int pos = read(5.24, xi, yi, nTotal);
+	double interpolated = yi[pos];
+	cout << interpolated << endl;
 
+	double dy, dx;
+	dy = yi[pos + 1] - yi[pos];
+	dx = xi[pos + 1] - xi[pos];
+	double derivated = dy / dx;
+	cout << derivated << endl;
 	//derivata se face scazand cele mai apropiate doua puncte x si facand Dy/Dx
 
 	delete pS;
