@@ -38,15 +38,62 @@ int main() {
 		cout << xi[i] << "\t" << yi[i] << endl;
 	}
 
-	int pos = read(5.24, xi, yi, nTotal);
-	double interpolated = yi[pos];
-	cout << interpolated << endl;
+	double value;
+	int pos;
+	double interpolated;
 
 	double dy, dx;
+	double derivated;
+
+	value = 1.75;
+	pos = read(value, xi, yi, nTotal);
+	interpolated = yi[pos];
+	cout << "\nInterpolated value for " << value << " is: " << interpolated << endl;
+
 	dy = yi[pos + 1] - yi[pos];
 	dx = xi[pos + 1] - xi[pos];
-	double derivated = dy / dx;
-	cout << derivated << endl;
+	derivated = dy / dx;
+	cout << "Derivated value for " << value << " is: " << derivated << endl;
+
+	value = 3.15;
+	pos = read(value, xi, yi, nTotal);
+	interpolated = yi[pos];
+	cout << "\nInterpolated value for " << value << " is: " << interpolated << endl;
+
+	dy = yi[pos + 1] - yi[pos];
+	dx = xi[pos + 1] - xi[pos];
+	derivated = dy / dx;
+	cout << "Derivated value for " << value << " is: " << derivated << endl;
+
+	value = 5.24;
+	pos = read(value, xi, yi, nTotal);
+	interpolated = yi[pos];
+	cout << "\nInterpolated value for " << value << " is: " << interpolated << endl;
+
+	dy = yi[pos + 1] - yi[pos];
+	dx = xi[pos + 1] - xi[pos];
+	derivated = dy / dx;
+	cout << "Derivated value for " << value << " is: " << derivated << endl;
+
+	value = 7.8;
+	pos = read(value, xi, yi, nTotal);
+	interpolated = yi[pos];
+	cout << "\nInterpolated value for " << value << " is: " << interpolated << endl;
+
+	dy = yi[pos + 1] - yi[pos];
+	dx = xi[pos + 1] - xi[pos];
+	derivated = dy / dx;
+	cout << "Derivated value for " << value << " is: " << derivated << endl;
+
+	value = 9.12;
+	pos = read(value, xi, yi, nTotal);
+	interpolated = yi[pos];
+	cout << "\nInterpolated value for " << value << " is: " << interpolated << endl;
+
+	dy = yi[pos + 1] - yi[pos];
+	dx = xi[pos + 1] - xi[pos];
+	derivated = dy / dx;
+	cout << "Derivated value for " << value << " is: " << derivated << endl;
 	//derivata se face scazand cele mai apropiate doua puncte x si facand Dy/Dx
 
 	delete pS;
