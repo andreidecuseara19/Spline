@@ -54,6 +54,7 @@ int main() {
 	dx = xi[pos + 1] - xi[pos];
 	derivated = dy / dx;
 	cout << "Derivated value for " << value << " is: " << derivated << endl;
+	//derivata se face scazand cele mai apropiate doua puncte x si facand Dy/Dx
 
 	value = 3.15;
 	pos = read(value, xi, yi, nTotal);
@@ -64,6 +65,7 @@ int main() {
 	dx = xi[pos + 1] - xi[pos];
 	derivated = dy / dx;
 	cout << "Derivated value for " << value << " is: " << derivated << endl;
+	//derivata se face scazand cele mai apropiate doua puncte x si facand Dy/Dx
 
 	value = 5.24;
 	pos = read(value, xi, yi, nTotal);
@@ -74,6 +76,7 @@ int main() {
 	dx = xi[pos + 1] - xi[pos];
 	derivated = dy / dx;
 	cout << "Derivated value for " << value << " is: " << derivated << endl;
+	//derivata se face scazand cele mai apropiate doua puncte x si facand Dy/Dx
 
 	value = 7.8;
 	pos = read(value, xi, yi, nTotal);
@@ -84,6 +87,7 @@ int main() {
 	dx = xi[pos + 1] - xi[pos];
 	derivated = dy / dx;
 	cout << "Derivated value for " << value << " is: " << derivated << endl;
+	//derivata se face scazand cele mai apropiate doua puncte x si facand Dy/Dx
 
 	value = 9.12;
 	pos = read(value, xi, yi, nTotal);
